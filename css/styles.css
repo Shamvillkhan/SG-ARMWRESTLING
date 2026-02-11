@@ -105,7 +105,7 @@ nav a:hover {
 
 #home {
   position: relative;
-  border-bottom-left-radius: 100px;
+  /* border-bottom-left-radius: 100px; */
   overflow: hidden;
 }
 
@@ -512,7 +512,7 @@ nav a:hover {
 
 .footer {
   background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-  border-top-left-radius: 100px;
+  /* border-top-left-radius: 100px; */
   position: relative;
   overflow: hidden;
 }
