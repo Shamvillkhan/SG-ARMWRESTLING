@@ -669,33 +669,43 @@
 
 
    
-    <!-- Testimonial Section -->
-<section id="testimonials" class="py-24 bg-gray-50">
+  <!-- Testimonial Section - RED, BLACK, WHITE theme ONLY -->
+<section id="testimonials" class="py-24 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-16 scroll-animate">
-    <h2 class="carousel-section-title">Athlete Verified. Competition Approved.</h2>
-<p class="carousel-section-subtitle">
-  Professional armwrestlers and coaches rely on SG Armwrestling for authentic, high-performance equipment.
-</p>
-
+      
+      <!-- BLACK text with RED highlights -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-black">
+        Athlete <span class="text-red-600">Verified.</span> 
+        Competition <span class="text-red-600">Approved.</span>
+      </h2>
+      
+      <!-- Dark gray subtitle - better contrast -->
+      <p class="text-gray-700 text-lg mt-4 max-w-2xl mx-auto">
+        Professional armwrestlers and coaches rely on SG Armwrestling for authentic, high-performance equipment.
+      </p>
+      
+      <!-- RED accent line (optional - remove if you don't want it) -->
+      <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
+      
     </div>
     
+    <!-- Your EXISTING carousel - untouched -->
     <div class="carousel-container" id="testimonial-carousel">
- 
+      <!-- Your dynamic JS testimonials will appear here exactly as before -->
     </div>
+    
   </div>
 </section>
-<!-- Contact US  -->
-
-   <section id="contact" class="py-28 bg-gray-50">
+<!-- Contact US  --><section id="contact" class="py-28 bg-white"> <!-- CHANGED: bg-gray-50 to bg-white -->
   <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Section Heading -->
+    <!-- Section Heading - RED & BLACK -->
     <div class="text-center mb-20">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">
-        Contact SG Armwrestling
+      <h2 class="text-4xl md:text-5xl font-extrabold text-black"> <!-- CHANGED: text-gray-900 to text-black -->
+        Contact <span class="text-red-600">SG Armwrestling</span> <!-- ADDED: Red brand name -->
       </h2>
-      <p class="text-gray-600 text-lg mt-6 max-w-2xl mx-auto">
+      <p class="text-gray-700 text-lg mt-6 max-w-2xl mx-auto"> <!-- CHANGED: darker gray for contrast -->
         Interested in our professional equipment? Have questions about pricing,
         bulk orders, or tournament setup? Reach out to us today.
       </p>
@@ -703,36 +713,36 @@
 
     <div class="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
 
-      <!-- LEFT: FORM -->
+      <!-- LEFT: FORM - WHITE CARD WITH RED ACCENTS -->
       <div>
         <div id="form-message" class="form-message"></div>
 
-        <form id="contact-form" class="space-y-6 bg-white p-10 rounded-3xl shadow-xl">
+        <form id="contact-form" class="space-y-6 bg-white p-10 rounded-3xl shadow-xl border border-gray-200"> <!-- ADDED: subtle border -->
 
           <div>
             <input type="text" id="name" name="name"
               placeholder="Full Name"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-600 focus:border-red-600 focus:outline-none transition"
               required />
           </div>
 
           <div>
             <input type="email" id="email" name="email"
               placeholder="Email Address"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-600 focus:border-red-600 focus:outline-none transition"
               required />
           </div>
 
           <div>
             <input type="tel" id="number" name="number"
               placeholder="Phone Number"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-600 focus:border-red-600 focus:outline-none transition"
               required />
           </div>
 
           <div>
             <select name="subject"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-600 focus:border-red-600 focus:outline-none transition"
               required>
               <option value="">Select Inquiry Type</option>
               <option>Product Pricing</option>
@@ -747,24 +757,24 @@
             <textarea id="message" name="message"
               placeholder="Write your message..."
               rows="5"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 focus:outline-none resize-none"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-600 focus:border-red-600 focus:outline-none resize-none transition"
               required></textarea>
           </div>
 
           <button type="submit"
-            class="w-full bg-black text-white font-bold py-4 rounded-lg hover:bg-yellow-500 hover:text-black transition duration-300">
+            class="w-full bg-red-600 text-white font-bold py-4 rounded-lg hover:bg-black hover:text-white transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Send Inquiry
-          </button>
+          </button> <!-- CHANGED: bg-black → bg-red-600, hover:bg-yellow → hover:bg-black -->
 
         </form>
       </div>
 
-      <!-- RIGHT: CONTACT INFO -->
+      <!-- RIGHT: CONTACT INFO - BLACK CARD WITH RED ICONS -->
       <div class="flex items-center">
-        <div class="bg-black text-white p-12 rounded-3xl shadow-2xl w-full">
+        <div class="bg-black text-white p-12 rounded-3xl shadow-2xl w-full border border-gray-800"> <!-- ADDED: subtle border -->
 
-          <h3 class="text-3xl font-bold mb-6">
-            Let's Build Stronger Athletes
+          <h3 class="text-3xl font-bold mb-6 text-white">
+            Let's Build <span class="text-red-600">Stronger Athletes</span> <!-- ADDED: Red accent -->
           </h3>
 
           <p class="text-gray-300 mb-10 leading-relaxed">
@@ -775,46 +785,58 @@
 
           <div class="space-y-8">
 
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                <i class="fas fa-phone text-black"></i>
+            <!-- Phone - RED icon, BLACK background, WHITE text -->
+            <div class="flex items-center space-x-4 group">
+              <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center group-hover:bg-white transition duration-300">
+                <i class="fas fa-phone text-white group-hover:text-red-600 text-xl transition duration-300"></i> <!-- WHITE icon → RED on hover -->
               </div>
               <div>
                 <p class="text-sm text-gray-400">Call Us</p>
-                <p class="text-lg font-semibold">+91 72258 90969</p>
+                <p class="text-lg font-semibold text-white">+91 72258 90969</p>
               </div>
             </div>
 
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                <i class="fas fa-envelope text-black"></i>
+            <!-- Email - RED icon, BLACK background, WHITE text -->
+            <div class="flex items-center space-x-4 group">
+              <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center group-hover:bg-white transition duration-300">
+                <i class="fas fa-envelope text-white group-hover:text-red-600 text-xl transition duration-300"></i> <!-- WHITE icon → RED on hover -->
               </div>
               <div>
                 <p class="text-sm text-gray-400">Email</p>
-                <p class="text-lg font-semibold">talhasyed505@gmail.com</p>
+                <p class="text-lg font-semibold text-white">talhasyed505@gmail.com</p>
               </div>
             </div>
 
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                <i class="fas fa-truck text-black"></i>
+            <!-- Shipping - RED icon, BLACK background, WHITE text -->
+            <div class="flex items-center space-x-4 group">
+              <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center group-hover:bg-white transition duration-300">
+                <i class="fas fa-truck text-white group-hover:text-red-600 text-xl transition duration-300"></i> <!-- WHITE icon → RED on hover -->
               </div>
               <div>
                 <p class="text-sm text-gray-400">Shipping</p>
-                <p class="text-lg font-semibold">Pan India Delivery</p>
+                <p class="text-lg font-semibold text-white">Pan India Delivery</p>
               </div>
             </div>
 
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                <i class="fas fa-clock text-black"></i>
+            <!-- Hours - RED icon, BLACK background, WHITE text -->
+            <div class="flex items-center space-x-4 group">
+              <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center group-hover:bg-white transition duration-300">
+                <i class="fas fa-clock text-white group-hover:text-red-600 text-xl transition duration-300"></i> <!-- WHITE icon → RED on hover -->
               </div>
               <div>
                 <p class="text-sm text-gray-400">Working Hours</p>
-                <p class="text-lg font-semibold">Mon - Sat | 9AM - 8PM</p>
+                <p class="text-lg font-semibold text-white">Mon - Sat | 9AM - 8PM</p>
               </div>
             </div>
 
+          </div>
+
+          <!-- ADDED: Trust Badge -->
+          <div class="mt-10 pt-6 border-t border-gray-800 text-center">
+            <p class="text-gray-400 text-sm">
+              <i class="fas fa-shield-alt text-red-600 mr-2"></i>
+              Verified Business | 100% Response Rate
+            </p>
           </div>
 
         </div>
@@ -823,16 +845,18 @@
     </div>
   </div>
 </section>
- -->
+
   </main>
 
 <footer class="footer py-24 text-white relative">
   
-  <!-- Background -->
-  <div class="absolute inset-0 opacity-10 bg-cover bg-center"
-       style="background-image: url('https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=2070')"></div>
-  <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
-
+  <!-- Background - SOLID BLACK -->
+  <div class="absolute inset-0 bg-black"></div> <!-- CHANGED: Pure black background -->
+  
+  <!-- Optional subtle pattern (commented out - remove if not needed) -->
+  <!-- <div class="absolute inset-0 opacity-10 bg-cover bg-center"
+       style="background-image: url('https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=2070')"></div> -->
+  
   <div class="max-w-7xl mx-auto px-6 relative z-10">
 
     <!-- Top Grid -->
@@ -841,18 +865,18 @@
       <!-- Brand Info -->
       <div>
         <div class="flex items-center space-x-3 mb-6">
-          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-            <i class="fas fa-fist-raised text-black text-xl"></i>
+          <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center"> <!-- CHANGED: Red background -->
+            <i class="fas fa-fist-raised text-white text-xl"></i> <!-- CHANGED: White icon -->
           </div>
-          <span class="text-2xl font-bold tracking-wide">SG ARMWRESTLING</span>
+          <span class="text-2xl font-bold tracking-wide text-white">SG ARMWRESTLING</span> <!-- CHANGED: White text -->
         </div>
 
-        <p class="text-gray-300 leading-relaxed mb-4">
+        <p class="text-gray-300 leading-relaxed mb-4"> <!-- Light gray text -->
           India's trusted brand for professional armwrestling equipment. 
           Built for strength, durability, and championship-level performance.
         </p>
 
-        <p class="text-gray-400 text-sm">
+        <p class="text-gray-400 text-sm"> <!-- Medium gray text -->
           Empowering athletes. Supporting tournaments. 
           Raising the standard of armwrestling equipment nationwide.
         </p>
@@ -860,20 +884,20 @@
 
       <!-- Quick Links -->
       <div>
-        <h4 class="text-xl font-bold mb-6 text-yellow-400">Quick Links</h4>
-        <ul class="space-y-3 text-gray-300">
-          <li><a href="#home" class="hover:text-yellow-400 transition">Home</a></li>
-          <li><a href="#about" class="hover:text-yellow-400 transition">About Us</a></li>
-          <li><a href="#products" class="hover:text-yellow-400 transition">Shop Equipment</a></li>
-          <li><a href="#testimonials" class="hover:text-yellow-400 transition">Athlete Reviews</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+        <h4 class="text-xl font-bold mb-6 text-red-600">Quick Links</h4> <!-- CHANGED: Red heading -->
+        <ul class="space-y-3 text-gray-300"> <!-- Light gray text -->
+          <li><a href="#home" class="hover:text-red-600 transition text-gray-300">Home</a></li> <!-- CHANGED: Red hover -->
+          <li><a href="#about" class="hover:text-red-600 transition text-gray-300">About Us</a></li>
+          <li><a href="#products" class="hover:text-red-600 transition text-gray-300">Shop Equipment</a></li>
+          <li><a href="#testimonials" class="hover:text-red-600 transition text-gray-300">Athlete Reviews</a></li>
+          <li><a href="#contact" class="hover:text-red-600 transition text-gray-300">Contact</a></li>
         </ul>
       </div>
 
       <!-- Equipment Categories -->
       <div>
-        <h4 class="text-xl font-bold mb-6 text-yellow-400">Our Equipment</h4>
-        <ul class="space-y-3 text-gray-300">
+        <h4 class="text-xl font-bold mb-6 text-red-600">Our Equipment</h4> <!-- CHANGED: Red heading -->
+        <ul class="space-y-3 text-gray-300"> <!-- Light gray text -->
           <li>Professional Armwrestling Tables</li>
           <li>Wrist & Pronation Handles</li>
           <li>Grip Strength Tools</li>
@@ -885,75 +909,75 @@
 
       <!-- Contact & Social -->
       <div>
-        <h4 class="text-xl font-bold mb-6 text-yellow-400">Contact & Support</h4>
+        <h4 class="text-xl font-bold mb-6 text-red-600">Contact & Support</h4> <!-- CHANGED: Red heading -->
 
-        <ul class="space-y-3 text-gray-300 text-sm mb-6">
-          <li><i class="fas fa-phone-alt mr-2 text-yellow-400"></i> +91 72258 90969</li>
-          <li><i class="fas fa-envelope mr-2 text-yellow-400"></i> support@sgarmwrestling.com</li>
-          <li><i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i> India</li>
-          <li><i class="fas fa-clock mr-2 text-yellow-400"></i> Mon - Sat | 9:00 AM - 8:00 PM</li>
+        <ul class="space-y-3 text-gray-300 text-sm mb-6"> <!-- Light gray text -->
+          <li><i class="fas fa-phone-alt mr-2 text-red-600"></i> +91 72258 90969</li> <!-- CHANGED: Red icon -->
+          <li><i class="fas fa-envelope mr-2 text-red-600"></i> support@sgarmwrestling.com</li> <!-- CHANGED: Red icon -->
+          <li><i class="fas fa-map-marker-alt mr-2 text-red-600"></i> India</li> <!-- CHANGED: Red icon -->
+          <li><i class="fas fa-clock mr-2 text-red-600"></i> Mon - Sat | 9:00 AM - 8:00 PM</li> <!-- CHANGED: Red icon -->
         </ul>
 
-        <!-- Social Icons -->
+        <!-- Social Icons - RED AND WHITE THEME -->
         <div class="flex space-x-4">
   
-  <a href="https://www.facebook.com/share/1BLVs734D4/"
-     target="_blank"
-     class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-blue-600 transition"
-     aria-label="Follow us on Facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
+          <a href="https://www.facebook.com/share/1BLVs734D4/"
+             target="_blank"
+             class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-white transition group"
+             aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook-f text-white group-hover:text-red-600"></i> <!-- White icon, red on hover -->
+          </a>
 
-  <a href="https://www.instagram.com/sgarmwrestlings.india/"
-     target="_blank"
-     class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gradient-to-r from-purple-500 to-pink-500 transition"
-     aria-label="Follow us on Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
+          <a href="https://www.instagram.com/sgarmwrestlings.india/"
+             target="_blank"
+             class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-white transition group"
+             aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram text-white group-hover:text-red-600"></i> <!-- White icon, red on hover -->
+          </a>
 
-  <a href="https://wa.me/917225890969?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20pricing%20and%20availability."
-     target="_blank"
-     class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-green-500 transition"
-     aria-label="Contact us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+          <a href="https://wa.me/917225890969?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20pricing%20and%20availability."
+             target="_blank"
+             class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-white transition group"
+             aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp text-white group-hover:text-red-600"></i> <!-- White icon, red on hover -->
+          </a>
 
-  <a href="https://www.youtube.com/@YourActualChannelName"
-     target="_blank"
-     class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-red-600 transition"
-     aria-label="Subscribe to our YouTube channel">
-    <i class="fab fa-youtube"></i>
-  </a>
+          <a href="https://www.youtube.com/@YourActualChannelName"
+             target="_blank"
+             class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-white transition group"
+             aria-label="Subscribe to our YouTube channel">
+            <i class="fab fa-youtube text-white group-hover:text-red-600"></i> <!-- White icon, red on hover -->
+          </a>
 
-</div>
+        </div>
 
       </div>
 
     </div>
 
     <!-- Trust Section -->
-    <div class="border-t border-gray-700 pt-10 pb-6 grid md:grid-cols-3 gap-6 text-center text-gray-400 text-sm">
+    <div class="border-t border-gray-800 pt-10 pb-6 grid md:grid-cols-3 gap-6 text-center text-gray-400 text-sm">
 
       <div>
-        <i class="fas fa-shield-alt text-yellow-400 text-lg mb-2"></i>
-        <p>Premium Quality Materials</p>
+        <i class="fas fa-shield-alt text-red-600 text-lg mb-2"></i> <!-- CHANGED: Red icon -->
+        <p class="text-gray-300">Premium Quality Materials</p> <!-- CHANGED: Light gray text -->
       </div>
 
       <div>
-        <i class="fas fa-truck text-yellow-400 text-lg mb-2"></i>
-        <p>Pan India Shipping Available</p>
+        <i class="fas fa-truck text-red-600 text-lg mb-2"></i> <!-- CHANGED: Red icon -->
+        <p class="text-gray-300">Pan India Shipping Available</p> <!-- CHANGED: Light gray text -->
       </div>
 
       <div>
-        <i class="fas fa-star text-yellow-400 text-lg mb-2"></i>
-        <p>Trusted by 1000+ Athletes</p>
+        <i class="fas fa-star text-red-600 text-lg mb-2"></i> <!-- CHANGED: Red icon -->
+        <p class="text-gray-300">Trusted by 1000+ Athletes</p> <!-- CHANGED: Light gray text -->
       </div>
 
     </div>
 
     <!-- Bottom -->
     <div class="border-t border-gray-800 pt-6 text-center">
-      <p class="text-gray-500 text-sm">
+      <p class="text-gray-400 text-sm"> <!-- Medium gray text -->
         © 2026 SG ARMWRESTLING. All Rights Reserved. 
         Designed for Champions.
       </p>

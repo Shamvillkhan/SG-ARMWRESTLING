@@ -511,7 +511,7 @@ nav a:hover {
 }
 
 .footer {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  background:black;
   /* border-top-left-radius: 100px; */
   position: relative;
   overflow: hidden;
@@ -599,4 +599,239 @@ nav a:hover {
 
 .skip-link:focus {
   top: 0;
+}
+
+
+
+
+/* contact updated css */
+
+/* CONTACT SECTION - RED/BLACK THEME */
+#contact .text-red-600 {
+  color: #b80606 !important;
+}
+
+#contact .bg-red-600 {
+  background-color: #b80606 !important;
+}
+
+#contact .border-red-600 {
+  border-color: #b80606 !important;
+}
+
+#contact .ring-red-600 {
+  ring-color: #b80606 !important;
+}
+
+#contact .hover\:bg-black:hover {
+  background-color: #000000 !important;
+}
+
+#contact .group:hover .group-hover\:text-red-600 {
+  color: #b80606 !important;
+}
+
+#contact .group:hover .group-hover\:bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Form focus styles */
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+  border-color: #b80606 !important;
+  box-shadow: 0 0 0 3px rgba(184, 6, 6, 0.1) !important;
+}
+
+/* TESTIMONIAL SECTION - RED/BLACK THEME ONLY */
+#testimonials {
+  background-color: #000000 !important; /* White background */
+}
+
+#testimonials .text-red-600 {
+  color: #b80606 !important; /* Your brand red */
+}
+
+#testimonials .text-black {
+  color: #ffffff !important; /* Pure black */
+}
+
+#testimonials .text-gray-700 {
+  color: #fdfeff !important; /* Dark gray for subtitle */
+}
+
+#testimonials .bg-red-600 {
+  background-color: #b80606 !important; /* Red accent line */
+}
+
+
+
+
+
+/* ======================================= */
+/* TESTIMONIAL CARDS - RED/BLACK/WHITE THEME */
+/* ======================================= */
+
+/* Testimonial Card Container */
+.testimonial-card {
+  background: #ffffff; /* WHITE background */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #e5e7eb; /* Light gray border */
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(184, 6, 6, 0.15); /* RED shadow */
+  border-color: #b80606; /* RED border on hover */
+}
+
+/* Quote Icon/Decoration */
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 100px;
+  color: rgba(184, 6, 6, 0.1); /* RED with low opacity */
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+/* Athlete Name */
+.testimonial-card h4,
+.testimonial-card .athlete-name {
+  color: #000000; /* BLACK */
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/* Athlete Role/Title */
+.testimonial-card .role,
+.testimonial-card .athlete-role {
+  color: #b80606; /* RED */
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Testimonial Content */
+.testimonial-card p,
+.testimonial-card .content {
+  color: #4b5563; /* DARK GRAY */
+  line-height: 1.7;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* Star Ratings */
+.testimonial-card .stars,
+.testimonial-card .rating {
+  color: #b80606; /* RED stars */
+}
+
+.testimonial-card .stars i,
+.testimonial-card .rating i {
+  color: #b80606; /* RED */
+  margin-right: 2px;
+}
+
+/* Rating Number */
+.testimonial-card .rating-number {
+  color: #6b7280; /* GRAY */
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* ======================================= */
+/* ALTERNATIVE - BLACK CARD VARIANT */
+/* ======================================= */
+
+.testimonial-card.black-variant,
+.testimonial-card.dark {
+  background: #000000; /* BLACK background */
+  border-color: #374151; /* Dark gray border */
+}
+
+.testimonial-card.black-variant h4,
+.testimonial-card.dark h4 {
+  color: #ffffff; /* WHITE text */
+}
+
+.testimonial-card.black-variant .role,
+.testimonial-card.dark .role {
+  color: #b80606; /* RED */
+}
+
+.testimonial-card.black-variant p,
+.testimonial-card.dark p {
+  color: #d1d5db; /* LIGHT GRAY */
+}
+
+.testimonial-card.black-variant::before {
+  color: rgba(184, 6, 6, 0.2); /* RED with opacity */
+}
+
+/* ======================================= */
+/* CAROUSEL NAVIGATION DOTS */
+/* ======================================= */
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d1d5db; /* Light gray */
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active,
+.carousel-dot:hover {
+  background: #b80606; /* RED */
+}
+
+/* ======================================= */
+/* TESTIMONIAL SECTION BACKGROUND */
+/* ======================================= */
+
+#testimonials {
+  background: #ffffff; /* WHITE */
+}
+
+#testimonials .section-title {
+  color: #000000; /* BLACK */
+}
+
+#testimonials .section-subtitle {
+  color: #4b5563; /* DARK GRAY */
+}
+
+#testimonials .section-title span {
+  color: #b80606; /* RED */
+}
+
+/* ======================================= */
+/* CTA BUTTON IN TESTIMONIAL SECTION */
+/* ======================================= */
+
+.testimonial-cta {
+  background: #b80606; /* RED */
+  color: #ffffff; /* WHITE */
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.testimonial-cta:hover {
+  background: #000000; /* BLACK */
+  color: #ffffff; /* WHITE */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(184, 6, 6, 0.3);
 }
