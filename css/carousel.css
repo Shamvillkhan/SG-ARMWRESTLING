@@ -35,7 +35,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 179, 22, 0.9);
+  background: #b80606;
   color: white;
   border: none;
   width: 50px;
@@ -52,12 +52,12 @@
 }
 
 .carousel-btn:hover:not(:disabled) {
-  background: rgba(230, 158, 20, 1);
+  background: #b80606;
   transform: translateY(-50%) scale(1.05);
 }
 
 .carousel-btn:disabled {
-  background: rgba(255, 179, 22, 0.5);
+  background: #d64646;
   cursor: not-allowed;
   opacity: 0.6;
 }
@@ -92,7 +92,7 @@
 }
 
 .carousel-dot.active {
-  background: #FFB316;
+  background: #b80606;
   transform: scale(1.2);
 }
 
@@ -147,7 +147,7 @@
 }
 
 .blog-content a {
-  color: #FFB316;
+  color: #b80606;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -155,7 +155,7 @@
 }
 
 .blog-content a:hover {
-  color: #e69e14;
+  color: #d52222;
 }
 
 .testimonial-content {
@@ -169,7 +169,7 @@
   top: 10px;
   left: 25px;
   font-size: 80px;
-  color: #FFB316;
+  color: #b80606;
   opacity: 0.2;
   font-family: Georgia, serif;
   line-height: 1;
@@ -332,13 +332,13 @@
 /* Focus styles for accessibility */
 .carousel-btn:focus,
 .carousel-dot:focus {
-  outline: 2px solid #FFB316;
+  outline: 2px solid #b80606;
   outline-offset: 2px;
 }
 
 .blog-card:focus-within,
 .testimonial-card:focus-within {
-  outline: 2px solid #FFB316;
+  outline: 2px solid #b80606;
   outline-offset: 4px;
 }
 
@@ -364,6 +364,6 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #FFB316, #f59e0b);
+  background: linear-gradient(90deg, #b80606, #ba1515);
   border-radius: 2px;
 }

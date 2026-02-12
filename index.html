@@ -83,8 +83,7 @@
 
 <body class="bg-gray-50" >
 
-
-  <!-- <div id="loading-screen">
+<!-- <div id="loading-screen">
     <div class="loader"></div>
     <div class="loading-text">Loading SG ARMWRESTLING...</div>
   </div> -->
@@ -93,59 +92,56 @@
 
   <nav id="navbar" class="fixed top-0 w-full z-50" role="navigation" aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-  <a href="#home" class="flex items-center space-x-3 no-underline">
-    <img src="image/SGLOGO.jpeg" alt="SG ARMWRESTLING Logo"
-         class="h-10 w-auto md:h-12 lg:h-14" />
-    <span class="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-800 bg-clip-text text-transparent">
-      SG ARMWRESTLING
-    </span>
-  </a>
-</div>
+      <div class="flex items-center space-x-3">
+        <a href="#home" class="flex items-center space-x-3 no-underline">
+          <img src="image/SGLOGO.jpeg" alt="SG ARMWRESTLING Logo"
+               class="h-10 w-auto md:h-12 lg:h-14" />
+          <span class="text-2xl font-bold text-white"> <!-- CHANGED: bg-gradient → text-white -->
+            SG ARMWRESTLING
+          </span>
+        </a>
+      </div>
 
-
-
-      <button id="menu-btn" class="md:hidden text-gray-800 text-2xl focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+      <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false"> <!-- CHANGED: text-gray-800 → text-white -->
         <i class="fas fa-bars"></i>
       </button>
 
       <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-8 text-base font-600">
-        <a href="#home" aria-label="Navigate to home section">Home</a>
-        <a href="#features" aria-label="Navigate to home section">Features</a>
-        <a href="#about" aria-label="Navigate to about section">About</a>
-        <a href="#services" aria-label="Navigate to services section">Services</a>
-        <a href="#projects" aria-label="Navigate to projects gallery">Gallery</a>
-        
-        <a href="#testimonials" aria-label="Navigate to testimonials section">Clients</a>
-        <a href="#contact" aria-label="Navigate to contact section">Contact</a>
+        <a href="#home" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to home section">Home</a> <!-- CHANGED: Added text-white -->
+        <a href="#products" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to projects gallery">Products</a> <!-- CHANGED: Added text-white -->
+        <!-- <a href="#features" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to features section">Features</a> CHANGED: Added text-white -->
+        <a href="#about" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to about section">About</a> <!-- CHANGED: Added text-white -->
+        <a href="#services" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to services section">Services</a> <!-- CHANGED: Added text-white -->
+        <a href="#testimonials" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to testimonials section">Clients</a> <!-- CHANGED: Added text-white -->
+        <a href="#contact" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to contact section">Contact</a> <!-- CHANGED: Added text-white -->
       </div>
     </div>
   </nav>
 
   <main id="main-content">
     <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center parallax" style="background-image: url('image/pexels-alexapopovich-9320424.jpg')" aria-label="Hero section">
-  <div class="hero-content text-center px-6">
-    
-    <h1 class="hero-title text-5xl md:text-7xl font-bold leading-tight max-w-4xl mx-auto mb-6">
-      Unleash Your True Power with <span class="text-yellow-400">SG ARMWRESTLING</span>
-    </h1>
-    
-    <p class="hero-subtitle text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto mb-8 font-light">
-      Train harder. Grip stronger. Dominate the table.  
-      Professional armwrestling training, elite strength development, and championship mindset.
-    </p>
-    
-   <div class="hero-cta">
-  <a href="#contact" 
-     class="cta-button inline-block text-white font-semibold px-8 py-4 rounded-md shadow-2xl text-lg" 
-     aria-label="Join SG Armwrestling Training">
-    Start Your Training Today
-  </a>
-</div>
+      <div class="hero-content text-center px-6">
+        
+        <h1 class="hero-title text-5xl md:text-7xl font-bold leading-tight max-w-4xl mx-auto mb-6 text-white"> <!-- CHANGED: Added text-white -->
+          Unleash Your True Power with <span class="text-red-600">SG ARMWRESTLING</span> <!-- CHANGED: text-yellow-400 → text-red-600 -->
+        </h1>
+        
+        <p class="hero-subtitle text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto mb-8 font-light">
+          Train harder. Grip stronger. Dominate the table.  
+          Professional armwrestling training, elite strength development, and championship mindset.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="#contact" 
+             class="cta-button inline-block text-white font-semibold px-8 py-4 rounded-md shadow-2xl text-lg bg-red-600 hover:bg-black transition-all duration-300"
+             aria-label="Join SG Armwrestling Training">
+            Start Your Training Today
+          </a>
+        </div>
 
-  </div>
-</section>
-
+      </div>
+    </section>
+<!--
 
     <section id="features" class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-6">
@@ -188,21 +184,23 @@
           </article>
         </div>
       </div>
-    </section>
+    </section> -->
 
-<section id="about" class="py-28 bg-gray-50 relative overflow-hidden">
+<section id="about" class="py-28 bg-white relative overflow-hidden"> <!-- CHANGED: bg-gray-50 → bg-white -->
 
   <div class="max-w-7xl mx-auto px-6">
 
     <!-- Top Title -->
     <div class="text-center max-w-3xl mx-auto mb-20">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-        Built for Power. Designed for Champions.
+      <h2 class="text-4xl md:text-5xl font-extrabold text-black leading-tight"> <!-- CHANGED: text-gray-900 → text-black -->
+        Built for <span class="text-red-600">Power.</span> Designed for <span class="text-red-600">Champions.</span> <!-- ADDED: Red accents -->
       </h2>
-      <p class="text-lg text-gray-600 mt-6 leading-relaxed">
+      <p class="text-lg text-gray-700 mt-6 leading-relaxed"> <!-- CHANGED: text-gray-600 → text-gray-700 -->
         SG ARMWRESTLING manufactures professional-grade equipment engineered 
         for strength, durability, and real competitive performance.
       </p>
+      <!-- ADDED: Red accent underline -->
+      <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
     </div>
 
     <!-- Main Grid -->
@@ -212,19 +210,18 @@
       <div class="relative">
         <img src="image/pexels-gratisography-4417.jpg"
              alt="SG Armwrestling Equipment"
-             class="rounded-3xl shadow-2xl w-full object-cover">
-
-        <!-- Floating Badge -->
-        <div class="absolute top-6 left-6 bg-black text-white px-6 py-3 rounded-full shadow-lg">
-          <span class="text-sm tracking-wide">Competition Grade Equipment</span>
+             class="rounded-3xl shadow-2xl w-full object-cover border-2 border-gray-200 hover:border-red-600 transition-all duration-300"> <!-- ADDED: hover effect -->
+        
+        <!-- Floating Badge - RED instead of black -->
+        <div class="absolute top-6 left-6 bg-red-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-black transition-all duration-300"> <!-- CHANGED: bg-black → bg-red-600 -->
+          <span class="text-sm tracking-wide font-semibold"><i class="fas fa-trophy mr-2"></i> Competition Grade Equipment</span> <!-- ADDED: trophy icon -->
         </div>
       </div>
 
       <!-- Right Content -->
       <div>
-
-        <h3 class="text-3xl font-bold text-gray-900 mb-6">
-          India's Trusted Armwrestling Equipment Brand
+        <h3 class="text-3xl font-bold text-black mb-6"> <!-- CHANGED: text-gray-900 → text-black -->
+          India's Trusted <span class="text-red-600">Armwrestling Equipment</span> Brand <!-- ADDED: Red accent -->
         </h3>
 
         <p class="text-gray-700 text-lg leading-relaxed mb-6">
@@ -239,307 +236,363 @@
           under extreme training conditions.
         </p>
 
-        <!-- Feature List (Clean Version) -->
+        <!-- Feature List - RED icons, WHITE background, BLACK text -->
         <div class="space-y-4">
-
-          <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-              <i class="fas fa-check text-black text-sm"></i>
+          
+          <div class="flex items-center space-x-4 group">
+            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-black transition-all duration-300 shadow-md"> <!-- CHANGED: bg-yellow-400 → bg-red-600 -->
+              <i class="fas fa-check text-white text-lg group-hover:scale-110 transition-transform"></i> <!-- CHANGED: text-black → text-white -->
             </div>
-            <p class="text-gray-800 font-medium">
+            <p class="text-gray-800 font-medium group-hover:text-red-600 transition-colors"> <!-- ADDED: hover effect -->
               Official tournament-standard dimensions
             </p>
           </div>
-
-          <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-              <i class="fas fa-check text-black text-sm"></i>
+          
+          <div class="flex items-center space-x-4 group">
+            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-black transition-all duration-300 shadow-md">
+              <i class="fas fa-check text-white text-lg group-hover:scale-110 transition-transform"></i>
             </div>
-            <p class="text-gray-800 font-medium">
+            <p class="text-gray-800 font-medium group-hover:text-red-600 transition-colors">
               Heavy-duty steel frame construction
             </p>
           </div>
-
-          <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-              <i class="fas fa-check text-black text-sm"></i>
+          
+          <div class="flex items-center space-x-4 group">
+            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-black transition-all duration-300 shadow-md">
+              <i class="fas fa-check text-white text-lg group-hover:scale-110 transition-transform"></i>
             </div>
-            <p class="text-gray-800 font-medium">
+            <p class="text-gray-800 font-medium group-hover:text-red-600 transition-colors">
               Engineered for serious athletes & gyms
             </p>
           </div>
-
-          <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-              <i class="fas fa-check text-black text-sm"></i>
+          
+          <div class="flex items-center space-x-4 group">
+            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-black transition-all duration-300 shadow-md">
+              <i class="fas fa-check text-white text-lg group-hover:scale-110 transition-transform"></i>
             </div>
-            <p class="text-gray-800 font-medium">
+            <p class="text-gray-800 font-medium group-hover:text-red-600 transition-colors">
               Built to withstand high-intensity training
             </p>
           </div>
-
+          
         </div>
-
+        
+        <!-- ADDED: Trust badge -->
+        <div class="mt-10 flex items-center">
+          <div class="flex -space-x-2">
+            <div class="w-10 h-10 bg-red-100 rounded-full border-2 border-white flex items-center justify-center">
+              <i class="fas fa-medal text-red-600"></i>
+            </div>
+            <div class="w-10 h-10 bg-red-100 rounded-full border-2 border-white flex items-center justify-center">
+              <i class="fas fa-trophy text-red-600"></i>
+            </div>
+            <div class="w-10 h-10 bg-red-100 rounded-full border-2 border-white flex items-center justify-center">
+              <i class="fas fa-star text-red-600"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 ml-4 text-sm">Trusted by 1000+ athletes across India</p>
+        </div>
+        
       </div>
     </div>
 
-    <!-- Stats Section (Makes It Look Very Professional) -->
+    <!-- Stats Section - RED numbers, BLACK text -->
     <div class="grid md:grid-cols-4 gap-8 mt-24 text-center">
-
-      <div>
-        <h4 class="text-4xl font-extrabold text-yellow-500">1000+</h4>
-        <p class="text-gray-600 mt-2">Athletes Served</p>
+      
+      <div class="group">
+        <h4 class="text-4xl md:text-5xl font-extrabold text-red-600 group-hover:text-black transition-colors duration-300">1000+</h4> <!-- CHANGED: text-yellow-500 → text-red-600 -->
+        <p class="text-gray-700 mt-2 font-medium">Athletes Served</p> <!-- CHANGED: text-gray-600 → text-gray-700 -->
+        <div class="w-12 h-1 bg-red-600 mx-auto mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
-
-      <div>
-        <h4 class="text-4xl font-extrabold text-yellow-500">50+</h4>
-        <p class="text-gray-600 mt-2">Tournaments Supported</p>
+      
+      <div class="group">
+        <h4 class="text-4xl md:text-5xl font-extrabold text-red-600 group-hover:text-black transition-colors duration-300">50+</h4>
+        <p class="text-gray-700 mt-2 font-medium">Tournaments Supported</p>
+        <div class="w-12 h-1 bg-red-600 mx-auto mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
-
-      <div>
-        <h4 class="text-4xl font-extrabold text-yellow-500">100%</h4>
-        <p class="text-gray-600 mt-2">Competition Standard</p>
+      
+      <div class="group">
+        <h4 class="text-4xl md:text-5xl font-extrabold text-red-600 group-hover:text-black transition-colors duration-300">100%</h4>
+        <p class="text-gray-700 mt-2 font-medium">Competition Standard</p>
+        <div class="w-12 h-1 bg-red-600 mx-auto mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
-
-      <div>
-        <h4 class="text-4xl font-extrabold text-yellow-500">Pan India</h4>
-        <p class="text-gray-600 mt-2">Shipping Available</p>
+      
+      <div class="group">
+        <h4 class="text-4xl md:text-5xl font-extrabold text-red-600 group-hover:text-black transition-colors duration-300">Pan India</h4>
+        <p class="text-gray-700 mt-2 font-medium">Shipping Available</p>
+        <div class="w-12 h-1 bg-red-600 mx-auto mt-2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
-
+      
     </div>
 
   </div>
 
-  <!-- Bottom CTA -->
+  <!-- Bottom CTA - BLACK background, RED button -->
   <div class="max-w-7xl mx-auto px-6 mt-24">
-    <div class="bg-black text-white rounded-3xl p-12 text-center shadow-2xl">
-      <h4 class="text-3xl font-bold mb-4">
-        Train Harder. Compete Stronger.
+    <div class="bg-black text-white rounded-3xl p-12 text-center shadow-2xl relative overflow-hidden group">
+      <!-- Red accent line -->
+      <div class="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+      
+      <h4 class="text-3xl md:text-4xl font-bold mb-4">
+        Train <span class="text-red-600">Harder.</span> Compete <span class="text-red-600">Stronger.</span> <!-- ADDED: Red accents -->
       </h4>
+      
       <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
         Discover professional armwrestling equipment trusted by athletes across India.
       </p>
+      
       <a href="#products"
-         class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-10 py-4 rounded-full transition">
-        View Equipment
-      </a>
+         class="inline-flex items-center bg-red-600 hover:bg-white text-white hover:text-red-600 font-bold px-10 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+        <i class="fas fa-eye mr-2"></i> View Equipment
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a> <!-- CHANGED: bg-yellow-500 → bg-red-600, hover:bg-yellow-400 → hover:bg-white, text-black → text-white/hover:text-red-600 -->
     </div>
   </div>
 
-  <!-- <div class="max-w-7xl mx-auto px-6 mt-16">
-    <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 p-8 rounded-3xl text-center shadow-xl">
-      <h4 class="text-2xl font-bold text-white mb-3">Upgrade Your Strength Arsenal</h4>
-      <p class="text-white mb-6">Discover professional-grade armwrestling equipment designed for serious performance.</p>
-      <a href="#products" class="inline-block bg-white text-yellow-600 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300">
-        Explore Our Products
-      </a>
-    </div> -->
-  </div>
+  <!-- Removed yellow gradient section completely -->
 
 </section>
 
 
 <!-- Product Section -->
-<section id="products" class="py-24 bg-gray-50">
+<section id="products" class="py-24 bg-black"> <!-- CHANGED: bg-gray-50 → bg-black -->
   <div class="max-w-7xl mx-auto px-6">
 
     <div class="text-center mb-16">
-      <h2 class="section-title">Buy SG Armwrestling Equipment</h2>
-      <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white"> <!-- CHANGED: section-title → custom white heading -->
+        Buy <span class="text-red-600">SG Armwrestling</span> Equipment <!-- ADDED: Red accent -->
+      </h2>
+      <p class="text-gray-300 text-lg mt-4 max-w-2xl mx-auto"> <!-- CHANGED: text-gray-600 → text-gray-300 -->
         Premium quality armwrestling equipment trusted by professional athletes.
       </p>
+      <!-- ADDED: Red accent underline -->
+      <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <!-- PRODUCT CARD -->
-      <div class="bg-white rounded-lg shadow-md p-5 hover:shadow-xl transition duration-300">
+      <!-- PRODUCT CARD 1 - WHITE CARD, BLACK TEXT, RED BUTTON -->
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 hover:border-red-600">
 
         <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?q=80&w=600"
              alt="Professional Armwrestling Table"
-             class="w-full h-60 object-cover rounded-md mb-4">
+             class="w-full h-60 object-cover rounded-lg mb-4">
 
         <!-- Product Name -->
-        <h3 class="text-lg font-semibold mb-2 hover:text-blue-600 cursor-pointer">
+        <h3 class="text-lg font-bold text-black mb-2 hover:text-red-600 cursor-pointer transition-colors">
           SG Professional Armwrestling Table (Tournament Standard)
         </h3>
 
-        <!-- Rating -->
+        <!-- Rating - RED stars -->
         <div class="flex items-center mb-2">
-          <span class="text-yellow-500 text-sm">★★★★★</span>
+          <span class="text-red-600 text-sm">★★★★★</span> <!-- CHANGED: text-yellow-500 → text-red-600 -->
           <span class="text-gray-500 text-sm ml-2">(124 reviews)</span>
         </div>
 
         <!-- Price -->
         <div class="mb-3">
-          <span class="text-2xl font-bold text-gray-900">₹24,999</span>
+          <span class="text-2xl font-bold text-black">₹24,999</span> <!-- CHANGED: text-gray-900 → text-black -->
           <span class="text-gray-500 line-through ml-2">₹29,999</span>
           <span class="text-green-600 text-sm ml-2">17% off</span>
         </div>
 
-        <!-- Features -->
-        <ul class="text-sm text-gray-600 space-y-1 mb-4">
-          <li>✔ Heavy-duty steel frame</li>
-          <li>✔ Official size elbow pads</li>
-          <li>✔ Anti-slip rubber base</li>
-          <li>✔ Used in state tournaments</li>
+        <!-- Features - BLACK text -->
+        <ul class="text-sm text-gray-700 space-y-1 mb-4"> <!-- CHANGED: text-gray-600 → text-gray-700 -->
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Heavy-duty steel frame</li> <!-- ADDED: Red check icon -->
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Official size elbow pads</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Anti-slip rubber base</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Used in state tournaments</li>
         </ul>
 
-        <p class="text-green-600 text-sm font-medium mb-4">In Stock</p>
+        <p class="text-green-600 text-sm font-medium mb-4 flex items-center">
+          <i class="fas fa-circle text-xs mr-2"></i> In Stock
+        </p>
 
-        <!-- Button -->
-        <button class="w-full bg-[#FFB316] hover:bg-yellow-500 text-black font-semibold py-2 rounded-md transition">
-          Buy Now
+        <!-- Button - RED with WHITE text -->
+        <button class="w-full bg-red-600 hover:bg-black text-white font-bold py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <i class="fas fa-shopping-cart mr-2"></i> Buy Now
         </button>
 
       </div>
 
-
-      <!-- SECOND PRODUCT -->
-      <div class="bg-white rounded-lg shadow-md p-5 hover:shadow-xl transition duration-300">
+      <!-- PRODUCT CARD 2 - WHITE CARD, BLACK TEXT, RED BUTTON -->
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 hover:border-red-600">
 
         <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600"
              alt="Wrist Training Handle"
-             class="w-full h-60 object-cover rounded-md mb-4">
+             class="w-full h-60 object-cover rounded-lg mb-4">
 
-        <h3 class="text-lg font-semibold mb-2 hover:text-blue-600 cursor-pointer">
+        <h3 class="text-lg font-bold text-black mb-2 hover:text-red-600 cursor-pointer transition-colors">
           SG Heavy-Duty Wrist & Pronation Handle
         </h3>
 
         <div class="flex items-center mb-2">
-          <span class="text-yellow-500 text-sm">★★★★☆</span>
+          <span class="text-red-600 text-sm">★★★★☆</span> <!-- CHANGED: text-yellow-500 → text-red-600 -->
           <span class="text-gray-500 text-sm ml-2">(89 reviews)</span>
         </div>
 
         <div class="mb-3">
-          <span class="text-2xl font-bold text-gray-900">₹2,499</span>
+          <span class="text-2xl font-bold text-black">₹2,499</span>
           <span class="text-gray-500 line-through ml-2">₹3,199</span>
           <span class="text-green-600 text-sm ml-2">22% off</span>
         </div>
 
-        <ul class="text-sm text-gray-600 space-y-1 mb-4">
-          <li>✔ Improves wrist containment</li>
-          <li>✔ Thick grip design</li>
-          <li>✔ Powder-coated finish</li>
-          <li>✔ Ideal for cable machines</li>
+        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Improves wrist containment</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Thick grip design</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Powder-coated finish</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Ideal for cable machines</li>
         </ul>
 
-        <p class="text-green-600 text-sm font-medium mb-4">In Stock</p>
+        <p class="text-green-600 text-sm font-medium mb-4 flex items-center">
+          <i class="fas fa-circle text-xs mr-2"></i> In Stock
+        </p>
 
-        <button class="w-full bg-[#FFB316] hover:bg-yellow-500 text-black font-semibold py-2 rounded-md transition">
-          Buy Now
+        <button class="w-full bg-red-600 hover:bg-black text-white font-bold py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <i class="fas fa-shopping-cart mr-2"></i> Buy Now
         </button>
 
       </div>
 
-
-      <!-- THIRD PRODUCT -->
-      <div class="bg-white rounded-lg shadow-md p-5 hover:shadow-xl transition duration-300">
+      <!-- PRODUCT CARD 3 - WHITE CARD, BLACK TEXT, RED BUTTON -->
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 hover:border-red-600">
 
         <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600"
              alt="Grip Strength Tool"
-             class="w-full h-60 object-cover rounded-md mb-4">
+             class="w-full h-60 object-cover rounded-lg mb-4">
 
-        <h3 class="text-lg font-semibold mb-2 hover:text-blue-600 cursor-pointer">
+        <h3 class="text-lg font-bold text-black mb-2 hover:text-red-600 cursor-pointer transition-colors">
           SG Elite Grip & Finger Strength Tool
         </h3>
 
         <div class="flex items-center mb-2">
-          <span class="text-yellow-500 text-sm">★★★★★</span>
+          <span class="text-red-600 text-sm">★★★★★</span>
           <span class="text-gray-500 text-sm ml-2">(156 reviews)</span>
         </div>
 
         <div class="mb-3">
-          <span class="text-2xl font-bold text-gray-900">₹1,999</span>
+          <span class="text-2xl font-bold text-black">₹1,999</span>
           <span class="text-gray-500 line-through ml-2">₹2,499</span>
           <span class="text-green-600 text-sm ml-2">20% off</span>
         </div>
 
-        <ul class="text-sm text-gray-600 space-y-1 mb-4">
-          <li>✔ Thick handle for max grip</li>
-          <li>✔ Durable industrial steel</li>
-          <li>✔ Improves finger strength</li>
-          <li>✔ Compact & portable</li>
+        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Thick handle for max grip</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Durable industrial steel</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Improves finger strength</li>
+          <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Compact & portable</li>
         </ul>
 
-        <p class="text-green-600 text-sm font-medium mb-4">In Stock</p>
+        <p class="text-green-600 text-sm font-medium mb-4 flex items-center">
+          <i class="fas fa-circle text-xs mr-2"></i> In Stock
+        </p>
 
-        <button class="w-full bg-[#FFB316] hover:bg-yellow-500 text-black font-semibold py-2 rounded-md transition">
-          Buy Now
+        <button class="w-full bg-red-600 hover:bg-black text-white font-bold py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <i class="fas fa-shopping-cart mr-2"></i> Buy Now
         </button>
 
       </div>
 
     </div>
+    
+    <!-- ADDED: View All Products CTA -->
+    <div class="text-center mt-16">
+      <a href="#contact" 
+         class="inline-flex items-center px-8 py-4 bg-transparent text-white font-bold rounded-lg border-2 border-red-600 hover:bg-red-600 hover:border-red-600 transition-all duration-300 transform hover:scale-105">
+        View All Products
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+
   </div>
 </section>
 
-
 <!-- Service Section -->
-  <section id="services" class="py-24 bg-gray-50">
+<section id="services" class="py-24 bg-white"> <!-- CHANGED: bg-gray-50 → bg-white -->
   <div class="max-w-7xl mx-auto px-6">
     
     <div class="text-center mb-16 scroll-animate">
-      <h2 class="section-title">Premium Armwrestling Solutions</h2>
-      <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-black"> <!-- CHANGED: section-title → custom heading -->
+        Premium <span class="text-red-600">Armwrestling</span> Solutions <!-- ADDED: Red accent -->
+      </h2>
+      <p class="text-gray-700 text-lg mt-4 max-w-2xl mx-auto"> <!-- CHANGED: text-gray-600 → text-gray-700 -->
         High-performance equipment engineered for serious athletes. Built for power, precision, and long-term durability.
       </p>
+      <!-- ADDED: Red accent underline -->
+      <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <!-- Service 1 -->
-      <article class="service-card scroll-animate">
-        <div class="service-icon" aria-hidden="true">
+      <!-- Service 1 - BLACK CARD -->
+      <article class="scroll-animate bg-black rounded-2xl p-8 border border-gray-800 hover:border-red-600 transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-2">
+        <div class="w-20 h-20 bg-red-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
           <i class="fas fa-table text-white text-3xl"></i>
         </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">
+        <h3 class="text-2xl font-bold text-white mb-3"> <!-- CHANGED: text-gray-800 → text-white -->
           Professional Armwrestling Tables
         </h3>
-        <p class="text-gray-600 relative z-10 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed"> <!-- CHANGED: text-gray-600 → text-gray-300 -->
           Competition-grade armwrestling tables built with reinforced steel frames, 
           premium padding, and official dimensions to ensure maximum stability, 
           safety, and performance during training and tournaments.
         </p>
+        <!-- ADDED: Learn more link -->
+        <div class="mt-6">
+          <a href="#products" class="text-red-600 font-semibold hover:text-white transition-colors inline-flex items-center">
+            Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
       </article>
 
-      <!-- Service 2 -->
-      <article class="service-card scroll-animate" style="animation-delay:0.1s">
-        <div class="service-icon" aria-hidden="true">
+      <!-- Service 2 - BLACK CARD -->
+      <article class="scroll-animate bg-black rounded-2xl p-8 border border-gray-800 hover:border-red-600 transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-2" style="animation-delay:0.1s">
+        <div class="w-20 h-20 bg-red-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
           <i class="fas fa-hand-rock text-white text-3xl"></i>
         </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">
+        <h3 class="text-2xl font-bold text-white mb-3">
           Grip & Wrist Strength Equipment
         </h3>
-        <p class="text-gray-600 relative z-10 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed">
           Heavy-duty handles, wrist rollers, and grip tools designed to develop 
           crushing hand strength, wrist control, and pulling power essential 
           for competitive dominance.
         </p>
+        <div class="mt-6">
+          <a href="#products" class="text-red-600 font-semibold hover:text-white transition-colors inline-flex items-center">
+            Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
       </article>
 
-      <!-- Service 3 -->
-      <article class="service-card scroll-animate" style="animation-delay:0.2s">
-        <div class="service-icon" aria-hidden="true">
+      <!-- Service 3 - BLACK CARD -->
+      <article class="scroll-animate bg-black rounded-2xl p-8 border border-gray-800 hover:border-red-600 transition-all duration-300 hover:shadow-2xl hover:shadow-red-900/20 hover:-translate-y-2" style="animation-delay:0.2s">
+        <div class="w-20 h-20 bg-red-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
           <i class="fas fa-cogs text-white text-3xl"></i>
         </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">
+        <h3 class="text-2xl font-bold text-white mb-3">
           Custom Equipment Manufacturing
         </h3>
-        <p class="text-gray-600 relative z-10 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed">
           Tailor-made armwrestling equipment crafted to meet specific training 
           or competition needs. We offer customization in size, structure, 
           branding, and design for clubs, gyms, and professional events.
         </p>
+        <div class="mt-6">
+          <a href="#products" class="text-red-600 font-semibold hover:text-white transition-colors inline-flex items-center">
+            Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
       </article>
 
     </div>
 
     <!-- CTA -->
-    <div class="text-center mt-12">
+    <div class="text-center mt-16">
       <a href="#products" 
-         class="px-8 py-4 bg-[#FFB316] text-gray-900 font-bold rounded-lg hover:bg-[#e69e14] transition-all duration-300 transform hover:scale-105 shadow-lg inline-block">
+         class="inline-flex items-center px-10 py-4 bg-red-600 text-white font-bold rounded-lg hover:bg-black transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
         Explore Our Equipment
+        <i class="fas fa-arrow-right ml-2"></i>
       </a>
     </div>
 
@@ -552,7 +605,7 @@
         <img src="" alt="Project preview" id="lightbox-img" />
       </div>
     </div>
-
+<!-- 
     <section id="achievements" class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16 scroll-animate">
@@ -582,26 +635,30 @@
 </div>
         </div>
       </div>
-    </section>
+    </section> -->
 <!-- FAQ Section -->
-    <section id="faq" class="py-24 bg-white">
+<section id="faq" class="py-24 bg-black"> <!-- CHANGED: bg-white → bg-black -->
   <div class="max-w-7xl mx-auto px-6">
     
     <div class="text-center mb-16 scroll-animate">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="text-gray-600 text-lg mt-4">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white"> <!-- CHANGED: section-title → custom white heading -->
+        Frequently Asked <span class="text-red-600">Questions</span> <!-- ADDED: Red accent -->
+      </h2>
+      <p class="text-gray-300 text-lg mt-4 max-w-2xl mx-auto"> <!-- CHANGED: text-gray-600 → text-gray-300 -->
         Everything you need to know about SG ARMWRESTLING products and authenticity.
       </p>
+      <!-- ADDED: Red accent underline -->
+      <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
     </div>
 
     <div class="mt-12 max-w-4xl mx-auto space-y-6">
 
-      <!-- FAQ 1 -->
-      <div class="border rounded-xl p-6 scroll-animate hover:shadow-lg transition">
-        <h3 class="font-semibold text-xl mb-3 text-gray-800">
+      <!-- FAQ 1 - Black card with red border hover -->
+      <div class="border border-gray-800 rounded-xl p-6 scroll-animate hover:shadow-lg hover:shadow-red-900/20 hover:border-red-600 transition-all duration-300 bg-black">
+        <h3 class="font-semibold text-xl mb-3 text-white"> <!-- CHANGED: text-gray-800 → text-white -->
           Are SG ARMWRESTLING products competition-grade and durable?
         </h3>
-        <p class="text-gray-600 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed"> <!-- CHANGED: text-gray-600 → text-gray-300 -->
           Yes. All SG ARMWRESTLING equipment is engineered using heavy-duty materials 
           and reinforced structures to meet professional training and competition standards. 
           Our tables, handles, and strength tools are built for maximum stability, safety, and long-term durability.
@@ -609,11 +666,11 @@
       </div>
 
       <!-- FAQ 2 -->
-      <div class="border rounded-xl p-6 scroll-animate hover:shadow-lg transition">
-        <h3 class="font-semibold text-xl mb-3 text-gray-800">
+      <div class="border border-gray-800 rounded-xl p-6 scroll-animate hover:shadow-lg hover:shadow-red-900/20 hover:border-red-600 transition-all duration-300 bg-black">
+        <h3 class="font-semibold text-xl mb-3 text-white">
           Why is SG ARMWRESTLING a trusted brand?
         </h3>
-        <p class="text-gray-600 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed">
           We focus on quality craftsmanship, precision engineering, and real athlete feedback 
           to design products that deliver results. Our commitment to performance, transparency, 
           and customer satisfaction has made SG ARMWRESTLING a trusted name among serious strength athletes.
@@ -621,11 +678,11 @@
       </div>
 
       <!-- FAQ 3 -->
-      <div class="border rounded-xl p-6 scroll-animate hover:shadow-lg transition">
-        <h3 class="font-semibold text-xl mb-3 text-gray-800">
+      <div class="border border-gray-800 rounded-xl p-6 scroll-animate hover:shadow-lg hover:shadow-red-900/20 hover:border-red-600 transition-all duration-300 bg-black">
+        <h3 class="font-semibold text-xl mb-3 text-white">
           How can I verify that I am purchasing original SG ARMWRESTLING equipment?
         </h3>
-        <p class="text-gray-600 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed">
           To ensure authenticity, always purchase directly through our official website 
           or verified contact channels. SG ARMWRESTLING products carry our official branding 
           and quality assurance standards. We advise customers to avoid unauthorized sellers 
@@ -633,37 +690,65 @@
         </p>
       </div>
 
-      <!-- FAQ 4 -->
-      <div class="border rounded-xl p-6 scroll-animate hover:shadow-lg transition bg-yellow-50 border-yellow-200">
-        <h3 class="font-semibold text-xl mb-3 text-gray-800">
+      <!-- FAQ 4 - Highlighted with red border -->
+      <div class="border border-red-600 rounded-xl p-6 scroll-animate hover:shadow-lg hover:shadow-red-900/30 transition-all duration-300 bg-black"> <!-- CHANGED: bg-yellow-50 border-yellow-200 → border-red-600 bg-black -->
+        <h3 class="font-semibold text-xl mb-3 text-white">
           Is SG ARMWRESTLING the original brand?
         </h3>
-        <p class="text-gray-600 leading-relaxed">
+        <p class="text-gray-300 leading-relaxed">
           Yes. SG ARMWRESTLING is the original and authentic brand dedicated to manufacturing 
           professional armwrestling equipment. We are aware that similar names or imitations may appear in the market. 
           For your safety and product quality assurance, always verify that you are dealing with 
           the official SG ARMWRESTLING brand.
         </p>
+        <!-- ADDED: Official badge -->
+        <div class="mt-4 inline-flex items-center px-3 py-1 bg-red-600 text-white text-xs font-semibold rounded-md">
+          <i class="fas fa-check-circle mr-1"></i> OFFICIAL
+        </div>
       </div>
 
     </div>
+    
+    <!-- ADDED: Still have questions? CTA -->
+    <div class="text-center mt-12">
+      <p class="text-gray-400 mb-4">Still have questions about our equipment?</p>
+      <a href="#contact" 
+         class="inline-flex items-center px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-white hover:text-red-600 transition-all duration-300 shadow-lg hover:shadow-xl">
+        <i class="fas fa-envelope mr-2"></i>
+        Contact Our Team
+      </a>
+    </div>
+    
   </div>
 </section>
 
 
 <!-- Blog Section with Carousel -->
-<section id="blog" class="py-24 bg-gray-50">
+<section id="blog" class="py-24 bg-white"> <!-- CHANGED: bg-gray-50 → bg-white -->
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-16 scroll-animate">
-      <h2 class="carousel-section-title">Elite Armwrestling Knowledge Hub</h2>
-      <p class="carousel-section-subtitle">
-        Training methods, technique breakdowns, equipment authenticity guides, and competition-level insights for serious athletes.
+      
+      <!-- CHANGED: carousel-section-title → custom RED/BLACK heading -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-black">
+        Elite <span class="text-red-600">Armwrestling</span> Knowledge Hub
+      </h2>
+      
+      <!-- CHANGED: carousel-section-subtitle → dark gray text -->
+      <p class="text-gray-700 text-lg mt-6 max-w-3xl mx-auto">
+        Training methods, technique breakdowns, equipment authenticity guides, 
+        and competition-level insights for serious athletes.
       </p>
+      
+      <!-- ADDED: Red accent underline -->
+      <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
+      
     </div>
     
+    <!-- Your EXISTING blog carousel - untouched -->
     <div class="carousel-container" id="blog-carousel">
-     
+      <!-- Your dynamic JS blog posts will appear here exactly as before -->
     </div>
+    
   </div>
 </section>
 
@@ -1112,14 +1197,14 @@ document.getElementById('callPopup').addEventListener('click', function(e) {
 
 <a href="tel:+917225890969"
    id="floating-call-btn"
-   class="fixed bottom-20 right-6 z-40 md:hidden flex items-center justify-center w-16 h-16 bg-[#FFB316] hover:bg-[#e69e14] text-white rounded-full shadow-2xl transition-all duration-300 animate-pulse"
+   class="fixed bottom-20 right-6 z-40 md:hidden flex items-center justify-center w-16 h-16 bg-[#b80606] hover:bg-[#b80626] text-white rounded-full shadow-2xl transition-all duration-300 animate-pulse"
    aria-label="Call SG ARMWRESTLING ">
    <i class="fas fa-phone text-xl"></i>
 </a>
 
 <a href="tel:+917225890969"
    id="desktop-call-btn"
-   class="fixed bottom-20 right-6 z-40 hidden md:flex items-center space-x-2 bg-[#FFB316] hover:bg-[#e69e14] text-white font-semibold px-4 py-3 rounded-md shadow-2xl transition-all duration-300"
+   class="fixed bottom-20 right-6 z-40 hidden md:flex items-center space-x-2 bg-[#b80606] hover:bg-[#b80626] text-white font-semibold px-4 py-3 rounded-md shadow-2xl transition-all duration-300"
    aria-label="Call SG ARMWRESTLING ">
    <i class="fas fa-phone"></i>
    <span>Call Now</span>

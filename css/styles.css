@@ -179,7 +179,7 @@ nav a:hover {
 }
 
 .feature-card {
-  background: white;
+  background: black;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -834,4 +834,162 @@ nav a:hover {
   color: #ffffff; /* WHITE */
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(184, 6, 6, 0.3);
+}
+
+
+/* ======================================= */
+/* BLOG SECTION - RED/BLACK/WHITE THEME */
+/* ======================================= */
+
+/* Section Background */
+#blog {
+  background-color: #ffffff !important; /* White */
+}
+
+/* Section Title */
+#blog h2 {
+  color: #000000 !important; /* Black */
+}
+
+#blog h2 span {
+  color: #b80606 !important; /* Red */
+}
+
+/* Section Subtitle */
+#blog .text-gray-700 {
+  color: #374151 !important; /* Dark gray */
+}
+
+/* Red Accent Line */
+#blog .bg-red-600 {
+  background-color: #b80606 !important; /* Red */
+}
+
+
+/* product style */
+
+/* ======================================= */
+/* PRODUCT SECTION - BLACK/RED/WHITE THEME */
+/* ======================================= */
+
+/* Section Background */
+#products {
+  background-color: #000000 !important; /* Black */
+}
+
+/* Section Title */
+#products h2 {
+  color: #ffffff !important; /* White */
+}
+
+#products h2 span {
+  color: #b80606 !important; /* Red */
+}
+
+/* Section Subtitle */
+#products .text-gray-300 {
+  color: #d1d5db !important; /* Light gray */
+}
+
+/* Red Accent Line */
+#products .bg-red-600 {
+  background-color: #b80606 !important;
+}
+
+/* Product Cards - White */
+#products .bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Card Border */
+#products .border-gray-200 {
+  border-color: #e5e7eb !important;
+}
+
+/* Card Hover Effects */
+#products .hover\:border-red-600:hover {
+  border-color: #b80606 !important;
+}
+
+#products .hover\:-translate-y-2:hover {
+  transform: translateY(-8px) !important;
+}
+
+#products .hover\:shadow-2xl:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Product Title */
+#products h3 {
+  color: #000000 !important; /* Black */
+  transition: color 0.3s ease;
+}
+
+#products h3:hover {
+  color: #b80606 !important; /* Red on hover */
+}
+
+/* Star Ratings */
+#products .text-red-600 {
+  color: #b80606 !important;
+}
+
+/* Price */
+#products .text-black {
+  color: #000000 !important;
+}
+
+/* Feature List */
+#products .text-gray-700 {
+  color: #374151 !important; /* Dark gray */
+}
+
+/* Feature Check Icons */
+#products .fa-check-circle {
+  color: #b80606 !important; /* Red */
+}
+
+/* In Stock Status */
+#products .text-green-600 {
+  color: #16a34a !important;
+}
+
+#products .fa-circle {
+  color: #16a34a !important;
+}
+
+/* Buy Now Button */
+#products button.bg-red-600 {
+  background-color: #b80606 !important;
+  color: #ffffff !important;
+}
+
+#products button.hover\:bg-black:hover {
+  background-color: #000000 !important;
+}
+
+/* View All Button */
+#products a.bg-transparent {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: #b80606 !important;
+}
+
+#products a.hover\:bg-red-600:hover {
+  background-color: #b80606 !important;
+  border-color: #b80606 !important;
+  color: #ffffff !important;
+}
+
+/* Remove all yellow */
+#products .bg-\[\#ffffff\] {
+  background-color: #b80606 !important;
+}
+
+#products .hover\:bg-yellow-500:hover {
+  background-color: #000000 !important;
+}
+
+#products .text-yellow-500 {
+  color: #b80606 !important;
 }
