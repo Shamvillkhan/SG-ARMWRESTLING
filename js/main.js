@@ -148,3 +148,29 @@ if (navbar) {
         }
     });
 }
+
+function buyOnWhatsApp(button) {
+  const name = button.getAttribute("data-name");
+  const price = button.getAttribute("data-price");
+
+  const phone = "917225890969"; // your number
+
+  const message = `Hello, I want to buy:\n\nProduct: ${name}\nPrice: ${price}\n\nPlease share more details.`;
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+}
+
+
+
+
+function showMoreProducts() {
+  const products = document.querySelectorAll(".more-product");
+
+  products.forEach(item => {
+    item.classList.remove("hidden");
+  });
+
+  document.getElementById("viewBtn").style.display = "none";
+}
