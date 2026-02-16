@@ -108,7 +108,6 @@
         <!-- <a href="#features" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to features section">Features</a> CHANGED: Added text-white -->
         <a href="#about" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to about section">About</a> <!-- CHANGED: Added text-white -->
         <a href="#services" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to services section">Services</a> <!-- CHANGED: Added text-white -->
-        <a href="#testimonials" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to testimonials section">Clients</a> <!-- CHANGED: Added text-white -->
         <a href="#contact" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to contact section">Contact</a> <!-- CHANGED: Added text-white -->
       </div>
     </div>
@@ -301,193 +300,308 @@
       <!-- 4 VISIBLE PRODUCTS -->
 
       <!-- CARD 1 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?q=80&w=600" class="w-full h-40 md:h-56 object-cover">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product1.jpeg" class="w-full h-40 md:h-56 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Professional Armwrestling Table</h3>
-          <p class="text-red-600 text-xs">★★★★★ (124)</p>
-          <p class="text-lg font-bold">₹24,999</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Professional Armwrestling Table" data-price="₹24,999"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">Y-Grip</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(124)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹300</p>
+            <p class="text-sm text-gray-500 line-through">₹600</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Y-Grip" data-price="₹300"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
       <!-- CARD 2 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600" class="w-full h-40 md:h-56 object-cover">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product17.jpeg" class="w-full h-40 md:h-56 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Wrist & Pronation Handle</h3>
-          <p class="text-red-600 text-xs">★★★★☆ (89)</p>
-          <p class="text-lg font-bold">₹2,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Wrist & Pronation Handle" data-price="₹2,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">Eccentric Grip</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(89)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹500</p>
+            <p class="text-sm text-gray-500 line-through">₹1,000</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Eccentric Grip" data-price="₹500"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
       <!-- CARD 3 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600" class="w-full h-40 md:h-56 object-cover">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product18.jpeg" class="w-full h-40 md:h-56 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Grip Strength Tool</h3>
-          <p class="text-red-600 text-xs">★★★★★ (156)</p>
-          <p class="text-lg font-bold">₹1,999</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Grip Strength Tool" data-price="₹1,999"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">Hand Grip</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(156)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹700</p>
+            <p class="text-sm text-gray-500 line-through">₹1,400</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Hand Grip" data-price="₹700"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
       <!-- CARD 4 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600" class="w-full h-40 md:h-56 object-cover">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product19.jpeg" class="w-full h-40 md:h-56 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Arm Trainer</h3>
-          <p class="text-red-600 text-xs">★★★★☆ (67)</p>
-          <p class="text-lg font-bold">₹3,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Arm Trainer" data-price="₹3,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">Ultra Grip</h3>
+          <p class="text-yellow-500 text-xs">★★★★☆ <span class="text-gray-500">(67)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹500</p>
+            <p class="text-sm text-gray-500 line-through">₹1,000</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Ultra Grip" data-price="₹500"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
       <!-- 🔴 HIDDEN PRODUCTS (INITIAL HIDE) -->
 
       <!-- CARD 5 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1594737625785-cb60c7c6d1d3?q=80&w=600" class="w-full h-40 object-cover">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product2.jpeg" class="w-full h-40 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Arm Blaster</h3>
-          <p class="text-lg font-bold">₹2,199</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Arm Blaster" data-price="₹2,199"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">Anti Top Roll</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(78)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹500</p>
+            <p class="text-sm text-gray-500 line-through">₹1,000</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Anti Top Roll" data-price="₹500"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
       <!-- CARD 6 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product3.jpeg" class="w-full h-40 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">Hand Pronation Granade</h3>
+          <p class="text-yellow-500 text-xs">★★★★☆ <span class="text-gray-500">(45)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹150</p>
+            <p class="text-sm text-gray-500 line-through">₹300</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Hand Pronation Granade" data-price="₹150"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
+      <!-- CARD 7 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product4.jpeg" class="w-full h-40 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
-        </div>
-      </div>
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
-        <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">CRONICAL GRIP 30-60 MM</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(112)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹300</p>
+            <p class="text-sm text-gray-500 line-through">₹600</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="CRONICAL GRIP 30-60 MM" data-price="₹300"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
-      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product">
-        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" class="w-full h-40 object-cover">
+      <!-- CARD 8 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product5.jpeg" class="w-full h-40 object-cover">
         <div class="p-3">
-          <h3 class="text-sm font-bold text-gray-800">SG Heavy Grip Handle</h3>
-          <p class="text-lg font-bold">₹1,499</p>
-          <button onclick="buyOnWhatsApp(this)" data-name="SG Heavy Grip Handle" data-price="₹1,499"
-            class="mt-2 w-full bg-red-600 text-white py-2 rounded">Buy Now</button>
+          <h3 class="text-sm font-bold text-gray-800">WRIST BALL</h3>
+          <p class="text-yellow-500 text-xs">★★★★☆ <span class="text-gray-500">(34)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹150</p>
+            <p class="text-sm text-gray-500 line-through">₹300</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="WRIST BALL" data-price="₹150"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product6.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">60 MM Centre Roller</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(203)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹1,499</p>
+            <p class="text-sm text-gray-500 line-through">₹2,998</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="60 MM Centre Roller" data-price="₹1,499"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 10 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product7.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">4 Hole Multi Purpose 60 MM</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(92)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹300</p>
+            <p class="text-sm text-gray-500 line-through">₹600</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="4 Hole Multi Purpose 60 MM" data-price="₹300"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 11 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product8.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">Multi Spinner</h3>
+          <p class="text-yellow-500 text-xs">★★★★☆ <span class="text-gray-500">(56)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹450</p>
+            <p class="text-sm text-gray-500 line-through">₹900</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Multi Spinner" data-price="₹450"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 12 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product9.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">4 Hole Mutli Purpose 60 MM</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(88)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹300</p>
+            <p class="text-sm text-gray-500 line-through">₹600</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="4 Hole Mutli Purpose 60 MM" data-price="₹300"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 13 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product10.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">Hand Grip Both Left and Right Set</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(167)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹1,200</p>
+            <p class="text-sm text-gray-500 line-through">₹2,400</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Hand Grip Both Left and Right Set" data-price="₹1,200"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 14 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product11.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">30 MM Roller</h3>
+          <p class="text-yellow-500 text-xs">★★★★☆ <span class="text-gray-500">(43)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹200</p>
+            <p class="text-sm text-gray-500 line-through">₹400</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="30 MM Roller" data-price="₹200"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 15 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product12.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">CONICAL MULTISPINNER</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(71)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹350</p>
+            <p class="text-sm text-gray-500 line-through">₹700</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="CONICAL MULTISPINNER" data-price="₹350"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 16 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product13.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">Hook Gladiator</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(134)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹750</p>
+            <p class="text-sm text-gray-500 line-through">₹1,500</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="Hook Gladiator" data-price="₹750"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 17 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product14.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">80 MM FAT Grip</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(98)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹500</p>
+            <p class="text-sm text-gray-500 line-through">₹1,000</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="80 MM FAT Grip" data-price="₹500"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 18 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product15.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">WRIST MAX</h3>
+          <p class="text-yellow-500 text-xs">★★★★☆ <span class="text-gray-500">(62)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹450</p>
+            <p class="text-sm text-gray-500 line-through">₹900</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="WRIST MAX" data-price="₹450"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- CARD 19 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md hidden more-product relative">
+        <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">50% OFF</span>
+        <img src="image/product16.jpeg" class="w-full h-40 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm font-bold text-gray-800">C-Handle</h3>
+          <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(81)</span></p>
+          <div class="flex items-center gap-2 mt-1">
+            <p class="text-lg font-bold text-gray-800">₹500</p>
+            <p class="text-sm text-gray-500 line-through">₹1,000</p>
+          </div>
+          <button onclick="buyOnWhatsApp(this)" data-name="C-Handle" data-price="₹500"
+            class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
 
@@ -715,34 +829,29 @@
 </section>
 
 
-<!-- Blog Section with Carousel -->
-<section id="blog" class="py-24 bg-white"> <!-- CHANGED: bg-gray-50 → bg-white -->
+<!-- 
+<section id="blog" class="py-24 bg-white"> 
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-16 scroll-animate">
       
-      <!-- CHANGED: carousel-section-title → custom RED/BLACK heading -->
       <h2 class="text-4xl md:text-5xl font-extrabold text-black">
         Elite <span class="text-red-600">Armwrestling</span> Knowledge Hub
       </h2>
       
-      <!-- CHANGED: carousel-section-subtitle → dark gray text -->
       <p class="text-gray-700 text-lg mt-6 max-w-3xl mx-auto">
         Training methods, technique breakdowns, equipment authenticity guides, 
         and competition-level insights for serious athletes.
       </p>
       
-      <!-- ADDED: Red accent underline -->
       <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"></div>
       
     </div>
     
-    <!-- Your EXISTING blog carousel - untouched -->
     <div class="carousel-container" id="blog-carousel">
-      <!-- Your dynamic JS blog posts will appear here exactly as before -->
     </div>
     
   </div>
-</section>
+</section> -->
 
 
    

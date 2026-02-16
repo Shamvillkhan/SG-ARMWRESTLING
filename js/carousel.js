@@ -65,56 +65,56 @@ const blogPosts = [
   }
 ];
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Rohit Sharma",
-    position: "State-Level Armwrestler",
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    content: "The quality of SG ARMWRESTLING tables is unmatched. The stability and finishing give me full confidence during intense matches. Truly competition-grade equipment.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Vikram Singh",
-    position: "Gym Owner",
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    content: "We installed SG ARMWRESTLING tables in our gym and the response from athletes has been phenomenal. Durable, strong, and built for serious performance.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Aditya Mehra",
-    position: "National Competitor",
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    content: "Their grip handles and wrist tools helped me improve my hand control significantly. The equipment feels solid and professional.",
-    rating: 5
-  },
-  {
-    id: 4,
-    name: "Sandeep Verma",
-    position: "Armwrestling Coach",
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    content: "As a coach, I only recommend reliable brands. SG ARMWRESTLING delivers authentic and high-quality products that my athletes trust.",
-    rating: 5
-  },
-  {
-    id: 5,
-    name: "Arjun Patel",
-    position: "Tournament Organizer",
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    content: "We used SG ARMWRESTLING tables for our regional championship and the build quality impressed everyone. Professional and tournament-ready.",
-    rating: 5
-  },
-  {
-    id: 6,
-    name: "Karan Yadav",
-    position: "Strength Athlete",
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    content: "Finally a brand that understands what real armwrestlers need. Heavy-duty, stable, and built for power training.",
-    rating: 5
-  }
-];
+// const testimonials = [
+//   {
+//     id: 1,
+//     name: "Rohit Sharma",
+//     position: "State-Level Armwrestler",
+//     image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+//     content: "The quality of SG ARMWRESTLING tables is unmatched. The stability and finishing give me full confidence during intense matches. Truly competition-grade equipment.",
+//     rating: 5
+//   },
+//   {
+//     id: 2,
+//     name: "Vikram Singh",
+//     position: "Gym Owner",
+//     image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+//     content: "We installed SG ARMWRESTLING tables in our gym and the response from athletes has been phenomenal. Durable, strong, and built for serious performance.",
+//     rating: 5
+//   },
+//   {
+//     id: 3,
+//     name: "Aditya Mehra",
+//     position: "National Competitor",
+//     image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+//     content: "Their grip handles and wrist tools helped me improve my hand control significantly. The equipment feels solid and professional.",
+//     rating: 5
+//   },
+//   {
+//     id: 4,
+//     name: "Sandeep Verma",
+//     position: "Armwrestling Coach",
+//     image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+//     content: "As a coach, I only recommend reliable brands. SG ARMWRESTLING delivers authentic and high-quality products that my athletes trust.",
+//     rating: 5
+//   },
+//   {
+//     id: 5,
+//     name: "Arjun Patel",
+//     position: "Tournament Organizer",
+//     image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+//     content: "We used SG ARMWRESTLING tables for our regional championship and the build quality impressed everyone. Professional and tournament-ready.",
+//     rating: 5
+//   },
+//   {
+//     id: 6,
+//     name: "Karan Yadav",
+//     position: "Strength Athlete",
+//     image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+//     content: "Finally a brand that understands what real armwrestlers need. Heavy-duty, stable, and built for power training.",
+//     rating: 5
+//   }
+// ];
 
 
 
