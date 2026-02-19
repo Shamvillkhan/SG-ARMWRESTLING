@@ -80,55 +80,85 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/carousel.css">
 </head>
-
+<!-- Add this to your navbar if it's fixed -->
+<style>
+  /* Add to your CSS */
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  body {
+    padding-top: 80px; /* Adjust based on your navbar height */
+  }
+</style>
 <body class="bg-gray-50" >
 
 
-  <div id="menu-overlay"></div>
+ <div id="menu-overlay"></div>
 
-  <nav id="navbar" class="fixed top-0 w-full z-50" role="navigation" aria-label="Main navigation">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <a href="#home" class="flex items-center space-x-3 no-underline">
-          <img src="image/SGLOGO.jpeg" alt="SG ARMWRESTLING Logo"
-               class="h-10 w-auto md:h-12 lg:h-14" />
-          <span class="text-2xl font-bold text-white"> <!-- CHANGED: bg-gradient → text-white -->
-            SG ARMWRESTLING
-          </span>
-        </a>
-      </div>
-
-      <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false"> <!-- CHANGED: text-gray-800 → text-white -->
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-8 text-base font-600">
-        <a href="#home" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to home section">Home</a> <!-- CHANGED: Added text-white -->
-        <a href="#products" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to projects gallery">Products</a> <!-- CHANGED: Added text-white -->
-        <!-- <a href="#features" class="text-white hover:text-red-600 transition-colors duration-300" aria-label="Navigate to features section">Features</a> CHANGED: Added text-white -->
-        <a href="#about" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to about section">About</a> <!-- CHANGED: Added text-white -->
-        <a href="#services" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to services section">Services</a> <!-- CHANGED: Added text-white -->
-        <a href="#contact" class="text-black hover:text-red-600 transition-colors duration-300" aria-label="Navigate to contact section">Contact</a> <!-- CHANGED: Added text-white -->
-      </div>
+<nav id="navbar" class="fixed top-0 w-full z-50" role="navigation" aria-label="Main navigation">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <a href="#home" class="flex items-center space-x-3 no-underline">
+        <img src="image/SGLOGO.jpeg" alt="SG ARMWRESTLING Logo"
+             class="h-10 w-auto md:h-12 lg:h-14" />
+        <span class="text-2xl font-bold text-white">
+          SG ARMWRESTLING
+        </span>
+      </a>
     </div>
-  </nav>
 
-  <main id="main-content">
-    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center parallax" style="background-image: url('image/SGLOGO.jpeg')" aria-label="Hero section">
-      <div class="hero-content text-center px-6">
-        
-        
-        
-        <div class="hero-cta">
-          <a href="#contact" 
-             class="cta-button inline-block text-white font-semibold px-8 py-4 rounded-md shadow-2xl text-lg bg-red-600 hover:bg-black transition-all duration-300"
-             aria-label="Join SG Armwrestling Training">
-            Take me to Whatsapp Shop
-          </a>
-        </div>
+    <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
 
-      </div>
-    </section>
+    <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-8 text-base font-600">
+      <a href="#home" class="text-black hover:text-red-600 transition-colors duration-300">Home</a>
+      <a href="#products" class="text-black hover:text-red-600 transition-colors duration-300">Products</a>
+      <a href="#about" class="text-black hover:text-red-600 transition-colors duration-300">About</a>
+      <a href="#services" class="text-black hover:text-red-600 transition-colors duration-300">Services</a>
+      <a href="#contact" class="text-black hover:text-red-600 transition-colors duration-300">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+
+<main id="main-content">
+
+<div class="w-full bg-black text-white py-3 px-4 text-center shadow-md">
+  <p class="max-w-7xl mx-auto text-[11px]">
+    <i class="fas fa-info-circle mr-2 text-red-500 text-[10px]"></i>
+    <strong class="text-[11px]">Note: </strong>
+    Please be advised that this website does not process or collect any payments directly.
+    To place an order, you will be redirected to our official WhatsApp Shop, where you can browse the product catalog, confirm item availability, and finalize your order with our team.
+    All order confirmations and payment arrangements (including Cash on Delivery, where applicable) are handled exclusively through our verified WhatsApp channel to ensure authenticity and customer security.
+  </p>
+</div>
+
+
+  <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center parallax"
+  style="background-image: url('image/SGLOGO.jpeg')" aria-label="Hero section">
+
+  <div class="hero-content text-center px-6">
+    <div class="hero-cta">
+      <a href="https://wa.me/917225890969?text=Hello%20I%20want%20to%20check%20your%20Armwrestling%20Products."
+         target="_blank"
+         class="cta-button inline-block text-white font-semibold px-8 py-4 rounded-md shadow-2xl text-lg bg-red-600 hover:bg-black transition-all duration-300"
+         aria-label="Join SG Armwrestling Training">
+         
+         Take me to Whatsapp Shop
+         
+      </a>
+    </div>
+  </div>
+
+</section>
+
 
 
 <section id="about" class="py-28 bg-white relative overflow-hidden"> <!-- CHANGED: bg-gray-50 → bg-white -->
@@ -275,8 +305,6 @@
     </div>
   </div>
 
-  <!-- Removed yellow gradient section completely -->
-
 </section>
 
 <!-- Product Section -->
@@ -294,8 +322,8 @@
       <div class="w-20 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
     </div>
 
-    <!-- GRID -->
-    <div class="grid grid-cols-2 gap-4 md:gap-6">
+ <!-- GRID -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
 
       <!-- 4 VISIBLE PRODUCTS -->
 
@@ -437,10 +465,10 @@
           <h3 class="text-sm font-bold text-gray-800">60 MM Centre Roller</h3>
           <p class="text-yellow-500 text-xs">★★★★★ <span class="text-gray-500">(203)</span></p>
           <div class="flex items-center gap-2 mt-1">
-            <p class="text-lg font-bold text-gray-800">₹1,499</p>
-            <p class="text-sm text-gray-500 line-through">₹2,998</p>
+            <p class="text-lg font-bold text-gray-800">₹300</p>
+            <p class="text-sm text-gray-500 line-through">₹600</p>
           </div>
-          <button onclick="buyOnWhatsApp(this)" data-name="60 MM Centre Roller" data-price="₹1,499"
+          <button onclick="buyOnWhatsApp(this)" data-name="60 MM Centre Roller" data-price="₹300"
             class="mt-2 w-full bg-red-600 text-white py-2 rounded text-sm hover:bg-red-700 transition">Buy Now</button>
         </div>
       </div>
@@ -667,9 +695,7 @@
           Grip & Wrist Strength Equipment
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Heavy-duty handles, wrist rollers, and grip tools designed to develop 
-          crushing hand strength, wrist control, and pulling power essential 
-          for competitive dominance.
+         We manufacture PROFESSIONAL grade arm wrestling equipments with the help of the most advanced 3D printing technology all the equipments goes through multiple quality checks and are designed by professional designers to ensure the best quality.
         </p>
         <div class="mt-6">
           <a href="#products" class="text-red-600 font-semibold hover:text-white transition-colors inline-flex items-center">
@@ -687,9 +713,7 @@
           Custom Equipment Manufacturing
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          Tailor-made armwrestling equipment crafted to meet specific training 
-          or competition needs. We offer customization in size, structure, 
-          branding, and design for clubs, gyms, and professional events.
+          We design custom equipments on the basis of customer's requirement criteria which includes custom size, design , and we also print custom names on the grips with extra charges applicable per product.
         </p>
         <div class="mt-6">
           <a href="#products" class="text-red-600 font-semibold hover:text-white transition-colors inline-flex items-center">
@@ -796,10 +820,9 @@
           How can I verify that I am purchasing original SG ARMWRESTLING equipment?
         </h3>
         <p class="text-gray-300 leading-relaxed">
-          To ensure authenticity, always purchase directly through our official website 
-          or verified contact channels. SG ARMWRESTLING products carry our official branding 
-          and quality assurance standards. We advise customers to avoid unauthorized sellers 
-          to guarantee they receive genuine, high-quality equipment.
+          To ensure authenticity, always place your order through our official website. From there, you will be securely redirected to our official WhatsApp link, which connects you directly with our verified sales channel.
+Inside the WhatsApp catalog, you can browse all available SG Arm Wrestling Equipment, select the items you wish to purchase, and confirm your order with our team.
+We  offer Cash on Delivery (COD) for your convenience, so you can shop with complete confidence and security.
         </p>
       </div>
 
