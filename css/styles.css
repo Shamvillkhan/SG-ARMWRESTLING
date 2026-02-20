@@ -993,3 +993,17 @@ nav a:hover {
 #products .text-yellow-500 {
   color: #b80606 !important;
 }
+
+
+
+ body {
+    padding-top: 80px; /* Adjust based on your navbar height */
+  }
+  /* Add to your CSS */
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+  }
