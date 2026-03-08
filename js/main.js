@@ -174,3 +174,79 @@ function showMoreProducts() {
 
   document.getElementById("viewBtn").style.display = "none";
 }
+
+
+
+
+
+function openBlogModal(blogId) {
+  const blog = blogPosts.find(post => post.id === blogId);
+
+  if (!blog) return;
+
+  const modal = document.getElementById("blogModal");
+  const content = document.getElementById("blogModalContent");
+
+  content.innerHTML = `
+    <h2 class="text-3xl font-bold mb-4">${blog.title}</h2>
+    <p class="text-sm text-gray-500 mb-6">${blog.readTime}</p>
+    <img src="${blog.image}" class=-full rounded-xl mb-6" />
+    <div class="text-gray-700 leading-relaxed space-y-4">
+      ${blog.content}
+    </div>
+  `;
+
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+}
+
+function closeBlogModal() {
+  const modal = document.getElementById("blogModal");
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+}
+
+
+let popupShown = false;
+
+function showCallPopup() {
+  if (popupShown) return;
+  
+  document.getElementById('callPopup').classList.remove('hidden');
+  setTimeout(() => {
+    document.querySelector('#callPopup > div').classList.remove('scale-95');
+  }, 10);
+  popupShown = true;
+
+  sessionStorage.setItem('popupShown', 'true');
+}
+
+function hideCallPopup() {
+  document.querySelector('#callPopup > div').classList.add('scale-95');
+  setTimeout(() => {
+    document.getElementById('callPopup').classList.add('hidden');
+  }, 300);
+}
+
+
+setTimeout(showCallPopup, 20000);
+
+
+document.addEventListener('mouseout', (e) => {
+  if (e.relatedTarget === null && !popupShown) {
+    showCallPopup();
+  }
+});
+
+window.addEventListener('load', () => {
+  if (sessionStorage.getItem('popupShown') === 'true') {
+    popupShown = true;
+  }
+});
+
+
+document.getElementById('callPopup').addEventListener('click', function(e) {
+  if (e.target.id === 'callPopup') {
+    hideCallPopup();
+  }
+});
